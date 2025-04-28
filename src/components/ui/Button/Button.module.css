@@ -1,0 +1,6 @@
+:global(.ant-btn).btn {
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}

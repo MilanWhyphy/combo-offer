@@ -1,0 +1,15 @@
+.antTableTransperantHeader {
+  width: 100%;
+}
+
+.antTable {
+  width: 100%;
+}
+
+.antTable table thead th {
+  /* background-color: var(--color-primary5) !important; */
+}
+
+.antTable :global(.ant-table-header) table thead tr th {
+  padding: 19px !important;
+}

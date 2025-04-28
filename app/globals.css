@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/Inter-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../public/fonts/Inter-Medium.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../public/fonts/Inter-SemiBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../public/fonts/Inter-Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Andika New Basic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/AndikaNewBasicCdnfonts/AndikaNewBasic-B.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Andika New Basic";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../public/fonts/AndikaNewBasicCdnfonts/AndikaNewBasic-BI.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Andika New Basic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../public/fonts/AndikaNewBasicCdnfonts/AndikaNewBasic-I.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Andika New Basic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../public/fonts/AndikaNewBasicCdnfonts/AndikaNewBasic-R.ttf")
+    format("truetype");
+}
+
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-container);
+}
+
+/** scroll bar */
+/** Chrome */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-forground);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: var(--scroll-background);
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide the arrows */
+}
+
+/** Firefox */
+@-moz-document url-prefix() {
+  * {
+    scrollbar-width: auto; /* Options: auto, thin */
+    scrollbar-color: #c1c1c1 #f1f1f1; /* thumb and track colors */
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ant-input {
+  height: 44px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+}
+
+/* Override Ant Design form item styles */
+.ant-form-item {
+  margin: 0 !important; /* Remove bottom margin */
+  padding: 0 !important; /* Remove bottom padding */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: red; /* Change this to your desired color */
+  opacity: 1; /* Required to override default opacity */
+}
+
+svg {
+  display: block;
+}
+
+.ant-layout-sider-trigger {
+  border-right: 1px solid var(--color-border);
+}
+
+body .ant-modal .ant-modal-content {
+  padding: 20px;
+}
+
+/* For checkbox */
+@media (max-width: 1500px) {
+}
+
+/* desktop */
+@media (max-width: 1199px) {
+}
+
+/* tab */
+@media (max-width: 991px) {
+}
+
+/* mobile */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 575px) {
+}
+
+/* mobile */
+@media (max-width: 340px) {
+}
+
+/* height media */
+@media screen and (max-height: 750px) {
+}

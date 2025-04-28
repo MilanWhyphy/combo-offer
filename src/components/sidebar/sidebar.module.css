@@ -1,0 +1,36 @@
+.sider {
+  background-color: red;
+  width: 100% !important;
+  background-color: #ffffff !important;
+  flex: none !important;
+  border-right: 1px solid #ececec;
+  height: 100%;
+}
+
+.siderContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menuItem1 {
+  margin-top: 55px;
+}
+
+.menuItem1 :global(.ant-menu) {
+  background-color: #ffffff;
+}
+
+:global(.ant-menu).menuUl {
+  border: none !important;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 600;
+}
+
+:global(.ant-divider).divider {
+  margin: 16px 0;
+  background-color: #ececec;
+}

@@ -1,0 +1,15 @@
+.navHeaderDiv {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.bottomBody {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.rightPanelLayout {
+  background-color: var(--color-bg-base);
+}

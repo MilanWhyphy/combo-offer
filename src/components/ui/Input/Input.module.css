@@ -1,0 +1,175 @@
+:global(.ant-typography).formLabel,
+:global(.ant-typography).formLabelRequired {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+:global(.ant-typography).formLabelRequired {
+  display: flex !important;
+}
+
+.requiredSup {
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+:global(.ant-input).formInput {
+  border-radius: 8px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border-light);
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+}
+
+:global(.ant-select).formSelect {
+  /* border: 0; */
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+  height: 44px;
+}
+
+.formSelect :global(.ant-select-selector) {
+  border-radius: 8px !important;
+}
+
+:global(.ant-select).formSelect div {
+  /* border: 0 !important; */
+}
+:global(.ant-upload.ant-upload-select).upload {
+  width: 100%;
+}
+.upload button {
+  width: 100%;
+  padding: 10px 16px;
+  height: auto;
+}
+
+:global(.ant-radio-group).radioWrapper {
+  width: 100% !important;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+:global(.ant-radio-group).radioWrapper > label {
+  max-width: calc(25% - 20px);
+  width: 100%;
+  border: 1px solid var(--color-border-light);
+  padding: 11px 0;
+  padding-left: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+:global(.ant-checkbox-group).addOn {
+  column-gap: unset;
+  width: 100% !important;
+  margin-bottom: -10px;
+}
+
+:global(.ant-checkbox-group).addOn > label {
+  max-width: calc(25% - 15px);
+  width: 100%;
+  border: 1px solid var(--color-border-light);
+  padding: 11px 0;
+  padding-left: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+:global(.ant-checkbox-wrapper).singleCheckbox {
+  /* max-width: calc(25% - 15px); */
+  width: 100% !important;
+  padding: 11px 0;
+  padding-left: 10px;
+  margin-bottom: -10px;
+  column-gap: unset;
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+}
+
+.timePicker {
+  height: 44px;
+}
+
+@media (min-width: 1199px) {
+  :global(.ant-checkbox-group).addOn > label:nth-child(4n-3) {
+    margin-left: 0px;
+  }
+
+  :global(.ant-checkbox-group).addOn > label:nth-child(4n-4) {
+    margin-right: 0;
+  }
+}
+
+:global(.ant-picker).datePicker {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border-light);
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+}
+
+:global(.ant-picker).monthPicker {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border-light);
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+}
+:global(.ant-picker).rangeDatePicker {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border-light);
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+}
+
+:global(.ant-picker).rangeTimePicker {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border-light);
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+}
+
+
+:global(.ant-picker).timePicker {
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border-light);
+  /* margin-bottom: 20px; */
+  max-width: 100%;
+  width: 100%;
+}
+
+:global(.ant-checkbox-group).demoCheckBox {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(265px, 1fr));
+  /* margin-inline: auto; */
+}
+
+:global(.ant-checkbox-group).demoCheckBox > label {
+  height: 44px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 1460px) {
+  :global(.ant-checkbox-group).demoCheckBox {
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+  }
+}

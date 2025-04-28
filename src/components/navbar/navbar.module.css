@@ -1,0 +1,62 @@
+.navHeader {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #ececec !important;
+  display: flex !important;
+  align-items: center;
+  height: 80px;
+  padding: 0;
+}
+
+.logoDiv {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  border-right: 1px solid #ececec;
+  height: 100%;
+}
+.logoDiv > img {
+  height: 40px;
+}
+.menuIcon {
+  display: none;
+}
+
+.titleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+:global(.ant-typography).navTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+}
+
+:global(.ant-typography).timeTypo,
+:global(.ant-typography).dateTypo {
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+  line-height: normal;
+}
+
+.ellipseImg {
+  margin: 0 10px;
+}
+
+:global(.ant-menu).menuUl {
+  border: none !important;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 600;
+}
