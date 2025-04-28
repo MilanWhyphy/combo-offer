@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Classic Burger", "price": 8.99 },
+  { "id": 2, "name": "Fries", "price": 3.49 },
+  { "id": 3, "name": "Soft Drink", "price": 2.25 },
+  { "id": 4, "name": "Chicken Nuggets (6 pcs)", "price": 5.75 },
+  { "id": 5, "name": "Veggie Wrap", "price": 6.5 },
+  { "id": 6, "name": "Grilled Sandwich", "price": 7.25 },
+  { "id": 7, "name": "Caesar Salad", "price": 6.99 },
+  { "id": 8, "name": "Ice Cream Sundae", "price": 4.0 },
+  { "id": 9, "name": "Coffee (Hot/Cold)", "price": 3.0 },
+  { "id": 10, "name": "Onion Rings", "price": 3.99 }
+]

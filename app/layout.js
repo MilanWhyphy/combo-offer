@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
-import ClientProvider from "@/src/components/layout/ClientProvider";
+import ClientProvider from "@/src/components/Layout/ClientProvider";
 import { cookies } from "next/headers";
 import Head from "next/head";
 import "./globals.css";

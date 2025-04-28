@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { Layout } from "antd";
 
-import Navbar from "../navbar/navbar";
-import Sidebar from "../sidebar/sidebar";
+import Navbar from "../Navbar/Navbar";
+import Sidebar from "../Sidebar/Sidebar";
 
 //
 
-import styles from "./layout.module.css";
+import styles from "./Layout.module.css";
 
 const { Content } = Layout;
 

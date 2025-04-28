@@ -11,7 +11,7 @@ import Icon from "@ant-design/icons/lib/components/Icon";
 
 import EllipseIcon from "@/src/assets/icons/EllipseIcon.svg";
 
-import styles from "./navbar.module.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [currentTime, setCurrentTime] = useState(moment());

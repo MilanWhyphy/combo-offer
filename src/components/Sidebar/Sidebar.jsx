@@ -7,7 +7,7 @@ import { Layout, Menu } from "antd";
 import Icon from "@ant-design/icons/lib/components/Icon";
 
 import { ProductOutlined } from "@ant-design/icons";
-import styles from "./sidebar.module.css";
+import styles from "./Sidebar.module.css";
 
 const { Sider } = Layout;
 
