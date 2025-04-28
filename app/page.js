@@ -54,29 +54,35 @@ export default function ComboOfferPage() {
       return;
     }
 
+    //* Create multiple combo offers
     // get existing combo offers from local storage
-    const existingComboOffers = JSON.parse(
-      localStorage.getItem("comboOffers") || "[]"
-    );
+    // const existingComboOffers = JSON.parse(
+    //   localStorage.getItem("comboOffers") || "[]"
+    // );
 
     // add new combo offer to existing ones
-    localStorage.setItem(
-      "comboOffers",
-      JSON.stringify([
-        ...existingComboOffers,
-        {
-          id: Date.now(), // add unique id for each combo
-          selectedItems,
-          customerCanBuy,
-          comboPrice,
-        },
-      ])
-    );
+    // localStorage.setItem(
+    //   "comboOffers",
+    //   JSON.stringify([
+    //     ...existingComboOffers,
+    //     {
+    //       id: Date.now(), // add unique id for each combo
+    //       selectedItems,
+    //       customerCanBuy,
+    //       comboPrice,
+    //     },
+    //   ])
+    // );
 
-    // // clear all state
-    // setSelectedItems([]);
-    // setCustomerCanBuy(0);
-    // setComboPrice(0);
+    //* Create single combo offer
+    localStorage.setItem(
+      "comboOffer",
+      JSON.stringify({
+        selectedItems,
+        customerCanBuy,
+        comboPrice,
+      })
+    );
 
     toast.success("Combo offer saved successfully");
   };
