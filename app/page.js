@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Items from "@/src/lib/items.json";
 
+import { toast } from "sonner";
 import { Typography } from "antd";
 
 import Card from "@/src/components/ui/Card/Card";
@@ -41,14 +42,43 @@ export default function ComboOfferPage() {
   };
 
   const handleSave = () => {
-    localStorage.setItem(
-      "comboOffer",
-      JSON.stringify({
-        selectedItems,
-        customerCanBuy,
-        comboPrice,
-      })
+    // check all value is valid
+    if (customerCanBuy <= 0 || comboPrice <= 0) {
+      toast.error("Please enter valid values");
+      return;
+    }
+
+    // check if selected items is empty
+    if (selectedItems.length === 0) {
+      toast.error("Please select at least one item");
+      return;
+    }
+
+    // get existing combo offers from local storage
+    const existingComboOffers = JSON.parse(
+      localStorage.getItem("comboOffers") || "[]"
     );
+
+    // add new combo offer to existing ones
+    localStorage.setItem(
+      "comboOffers",
+      JSON.stringify([
+        ...existingComboOffers,
+        {
+          id: Date.now(), // add unique id for each combo
+          selectedItems,
+          customerCanBuy,
+          comboPrice,
+        },
+      ])
+    );
+
+    // // clear all state
+    // setSelectedItems([]);
+    // setCustomerCanBuy(0);
+    // setComboPrice(0);
+
+    toast.success("Combo offer saved successfully");
   };
 
   return (

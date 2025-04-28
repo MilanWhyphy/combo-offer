@@ -41,7 +41,7 @@ const CreateCombo = ({
             type="number"
             label="Customer can buy"
             name="customerCanBuy"
-            value={customerCanBuy || " "}
+            value={customerCanBuy || null}
             onChange={handleInputChange}
           />
         </div>
@@ -50,7 +50,7 @@ const CreateCombo = ({
             type="number"
             label="Combo Price"
             name="comboPrice"
-            value={comboPrice || " "}
+            value={comboPrice || null}
             onChange={handleInputChange}
           />
         </div>
