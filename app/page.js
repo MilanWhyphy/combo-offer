@@ -3,14 +3,20 @@
 import React, { useState } from "react";
 import Items from "@/src/lib/items.json";
 
-import styles from "./page.module.css";
-import Card from "@/src/components/ui/Card/Card";
 import { Typography } from "antd";
+
+import Card from "@/src/components/ui/Card/Card";
+import Button from "@/src/components/ui/Button/Button";
 import ProductList from "@/src/components/Products/ProductList";
+import CreateCombo from "@/src/components/CreateCombo/CreateCombo";
+
+import styles from "./page.module.css";
 
 export default function ComboOfferPage() {
   const Products = Items.map((item) => item);
   const [selectedItems, setSelectedItems] = useState([]);
+  const [customerCanBuy, setCustomerCanBuy] = useState(0);
+  const [comboPrice, setComboPrice] = useState(0);
 
   const handleItemClick = (item) => {
     // if item is already selected then remove it from selected items
@@ -19,6 +25,30 @@ export default function ComboOfferPage() {
     } else {
       setSelectedItems([...selectedItems, item]);
     }
+  };
+
+  const handleRemoveItem = (item) => {
+    setSelectedItems(selectedItems.filter((i) => i.id !== item.id));
+  };
+
+  // create common function (using e.target.name) set state
+  const handleInputChange = (e) => {
+    if (e.target.name === "customerCanBuy") {
+      setCustomerCanBuy(+e.target.value);
+    } else if (e.target.name === "comboPrice") {
+      setComboPrice(+e.target.value);
+    }
+  };
+
+  const handleSave = () => {
+    localStorage.setItem(
+      "comboOffer",
+      JSON.stringify({
+        selectedItems,
+        customerCanBuy,
+        comboPrice,
+      })
+    );
   };
 
   return (
@@ -36,14 +66,22 @@ export default function ComboOfferPage() {
               />
             </div>
             <div className={styles.right}>
-              <div className={styles.inputContainer}>
-                <input type="number" placeholder="Customer can buy" />
-                <input type="number" placeholder="Combo Price" />
-              </div>
-              <div className={styles.selectedItems}>
-                {selectedItems.map((item) => (
-                  <div key={item.id}>{item.name}</div>
-                ))}
+              <CreateCombo
+                customerCanBuy={customerCanBuy}
+                comboPrice={comboPrice}
+                handleInputChange={handleInputChange}
+                selectedItems={selectedItems}
+                handleRemoveItem={handleRemoveItem}
+              />
+
+              <div className={styles.btnWrapper}>
+                <Button
+                  type="primary"
+                  label="Save"
+                  className={styles.btnSave}
+                  disabled={selectedItems.length === 0}
+                  onClick={handleSave}
+                />
               </div>
             </div>
           </div>

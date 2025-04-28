@@ -1,7 +1,7 @@
 :global(.ant-typography).formLabel,
 :global(.ant-typography).formLabelRequired {
-  font-size: var(--text-sm);
-  font-weight: var(--font-medium);
+  font-size: 14px;
+  font-weight: 600;
   line-height: normal;
   margin-bottom: 7px;
 }
@@ -12,13 +12,12 @@
 
 .requiredSup {
   font-size: 14px;
-  color: var(--color-primary);
 }
 
 :global(.ant-input).formInput {
   border-radius: 8px;
   padding: 14px 16px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   /* margin-bottom: 20px; */
   max-width: 100%;
   width: 100%;
@@ -57,7 +56,7 @@
 :global(.ant-radio-group).radioWrapper > label {
   max-width: calc(25% - 20px);
   width: 100%;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   padding: 11px 0;
   padding-left: 10px;
   border-radius: 8px;
@@ -73,7 +72,7 @@
 :global(.ant-checkbox-group).addOn > label {
   max-width: calc(25% - 15px);
   width: 100%;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   padding: 11px 0;
   padding-left: 10px;
   border-radius: 8px;
@@ -87,7 +86,7 @@
   padding-left: 10px;
   margin-bottom: -10px;
   column-gap: unset;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   border-radius: 8px;
 }
 
@@ -108,7 +107,7 @@
 :global(.ant-picker).datePicker {
   border-radius: 8px;
   padding: 10px 16px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   /* margin-bottom: 20px; */
   max-width: 100%;
   width: 100%;
@@ -117,7 +116,7 @@
 :global(.ant-picker).monthPicker {
   border-radius: 8px;
   padding: 10px 16px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   /* margin-bottom: 20px; */
   max-width: 100%;
   width: 100%;
@@ -125,7 +124,7 @@
 :global(.ant-picker).rangeDatePicker {
   border-radius: 8px;
   padding: 10px 16px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   /* margin-bottom: 20px; */
   max-width: 100%;
   width: 100%;
@@ -134,17 +133,16 @@
 :global(.ant-picker).rangeTimePicker {
   border-radius: 8px;
   padding: 10px 16px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   /* margin-bottom: 20px; */
   max-width: 100%;
   width: 100%;
 }
 
-
 :global(.ant-picker).timePicker {
   border-radius: 8px;
   padding: 10px 16px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   /* margin-bottom: 20px; */
   max-width: 100%;
   width: 100%;
@@ -160,7 +158,7 @@
 
 :global(.ant-checkbox-group).demoCheckBox > label {
   height: 44px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #ececec;
   border-radius: 8px;
   display: flex;
   justify-content: left;

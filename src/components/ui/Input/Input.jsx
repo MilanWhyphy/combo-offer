@@ -1,6 +1,6 @@
 import * as React from "react";
 import {
-  Input as Input,
+  Input as AntdInput,
   Form,
   Select,
   Upload,
@@ -44,7 +44,7 @@ const Input = React.forwardRef(
             <Typography className={styles.formLabel}>{label}</Typography>
           ))}
         {(type === "text" || type === "email" || type === "number") && (
-          <Input
+          <AntdInput
             type={type}
             autoComplete="off"
             className={`${styles.formInput} ${className}`}
@@ -53,7 +53,7 @@ const Input = React.forwardRef(
         )}
         {type === "textarea" && <Input.TextArea {...props} />}
         {type === "password" && (
-          <Input.Password
+          <AntdInput.Password
             type={type}
             autoComplete="off"
             className={`${styles.formInput} ${className}`}

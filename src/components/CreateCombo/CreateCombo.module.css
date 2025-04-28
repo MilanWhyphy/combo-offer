@@ -1,0 +1,15 @@
+.inputContainer {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.inputWrapper {
+  max-width: 50%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.tableContainer {
+  padding-top: 20px;
+  height: 350px;
+}
