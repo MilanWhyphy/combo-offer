@@ -1,10 +1,13 @@
 .container {
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  margin-bottom: -30px;
 }
 
 .cardContainer {
+  padding: 20px;
+}
+
+.itemContainer {
 }
 
 .card {
@@ -14,8 +17,21 @@
   display: flex;
 }
 
+.itemCardContent {
+  display: flex;
+}
+
 .left {
   max-width: 30%;
+  width: 100%;
+}
+
+.itemLeft {
+  max-width: 30%;
+  width: 100%;
+}
+
+.itemRight {
   width: 100%;
 }
 
