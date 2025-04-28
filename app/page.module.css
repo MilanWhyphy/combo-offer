@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.cardContainer {
+}
+
+.card {
+}
+
+.cardContent {
+  display: flex;
+}
+
+.left {
+  max-width: 30%;
+  width: 100%;
+}
+
+:global(.ant-typography).title {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.productList {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ececec;
+}
+
+.produtWrapper {
+  border-bottom: 1px solid #ececec;
+}
+
+.produtWrapper:last-child {
+  border-bottom: none;
+}
+
+.productInner {
+  width: 100%;
+  padding: 10px;
+}
+
+.right {
+  max-width: 70%;
+  width: 100%;
+}
