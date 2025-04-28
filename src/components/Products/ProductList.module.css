@@ -1,0 +1,18 @@
+.productList {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ececec;
+}
+
+.produtWrapper {
+  border-bottom: 1px solid #ececec;
+}
+
+.produtWrapper:last-child {
+  border-bottom: none;
+}
+
+.productInner {
+  width: 100%;
+  padding: 10px;
+}

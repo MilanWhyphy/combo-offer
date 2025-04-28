@@ -25,26 +25,8 @@
   padding-bottom: 10px;
 }
 
-.productList {
-  height: 400px;
-  overflow-y: auto;
-  border: 1px solid #ececec;
-}
-
-.produtWrapper {
-  border-bottom: 1px solid #ececec;
-}
-
-.produtWrapper:last-child {
-  border-bottom: none;
-}
-
-.productInner {
-  width: 100%;
-  padding: 10px;
-}
-
 .right {
   max-width: 70%;
   width: 100%;
+  padding-left: 20px;
 }

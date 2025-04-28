@@ -4,16 +4,11 @@ import React, { useState } from "react";
 import Items from "@/src/lib/items.json";
 
 import styles from "./page.module.css";
-import { toast } from "sonner";
 import Card from "@/src/components/ui/Card/Card";
-import { Checkbox, Typography } from "antd";
+import { Typography } from "antd";
+import ProductList from "@/src/components/Products/ProductList";
 
 export default function ComboOfferPage() {
-  // Items are list of items with id, name and price
-  // we need to make left side list of items and
-  // right side 2 input fields one for 'Customer can buy' and once for 'Combo Price'
-  // bottom of this 2 fields we need to show items that are selected from left side list
-  // remember from left side once item is selected and user again click then show them item is already selected
   const Products = Items.map((item) => item);
   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -34,30 +29,11 @@ export default function ComboOfferPage() {
             <div className={styles.left}>
               <Typography className={styles.title}>All Products</Typography>
 
-              <div className={styles.productList}>
-                {Products.map((product) => (
-                  <div
-                    key={product.id + Date.now()}
-                    className={styles.produtWrapper}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleItemClick(product);
-                    }}
-                  >
-                    <div className={styles.productInner}>
-                      <Checkbox
-                        checked={selectedItems.some((i) => i.id === product.id)}
-                        onChange={(e) => {
-                          e.stopPropagation();
-                          handleItemClick(product);
-                        }}
-                      >
-                        {product.name}
-                      </Checkbox>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <ProductList
+                products={Products}
+                selectedItems={selectedItems}
+                handleItemClick={handleItemClick}
+              />
             </div>
             <div className={styles.right}>
               <div className={styles.inputContainer}>
